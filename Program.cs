@@ -16,6 +16,15 @@
             Console.WriteLine("Business Package: " + kodePaket.GetKodePaket("Business"));
             Console.WriteLine("Student Package: " + kodePaket.GetKodePaket("Student"));
             Console.WriteLine("Traveler Package: " + kodePaket.GetKodePaket("Traveler"));
+
+            MesinKopi mesinKopi = new MesinKopi();
+            mesinKopi.Standby();
+            mesinKopi.Brewing();
+            mesinKopi.Standby();
+            mesinKopi.Maintenance();
+            mesinKopi.Standby();
+            mesinKopi.Off();
+            mesinKopi.Maintenance();
         }
     }
 }
